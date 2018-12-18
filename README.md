@@ -39,8 +39,8 @@ Retrieve JSON object containing the currency pairs, trading status, rateLimits e
 
 ```json
 {
-    "timezone": "GMT", 				#//Timezone
-    "serverTime": 1545118368886, 		#//milliseconds
+    "timezone": "GMT", 				//Timezone
+    "serverTime": 1545118368886, 		//milliseconds
     "rateLimits": [
         {
             "weight_type": "REQUEST_NEW_ORDER",
@@ -111,13 +111,13 @@ Payload:
 ```json
 
 {
-   "MsgType":"MarketDataSnapshot", 			// MsgType / Update Type
+   "MsgType":"MarketDataSnapshot", 			// MsgType or Update Type
    "Timestamp":1545119596094, 				// Milliseconds (epoch)
    "Symbol":"XRP/ETH", 					// Currency pair
    "NoMDEntries":5, 					// Total bids + asks
    "Bids":[
         {
-            "MDEntryType":"Bid", 			// Bid / Ask update
+            "MDEntryType":"Bid", 			// Bid or Ask update
             "MDEntryPx":"0.00020000", 			// Bid price
             "MDEntrySize":"0.02510000" 			// Bid Volume
    },
@@ -134,7 +134,7 @@ Payload:
    ],
    "Asks":[
    {
-            "MDEntryType":"Ask", 			// Bid / Ask Update
+            "MDEntryType":"Ask", 			// Bid or Ask Update
             "MDEntryPx":"0.00020100", 			// Offer price
             "MDEntrySize":"0.00029800" 			// Offer volume
    },
@@ -151,7 +151,7 @@ Payload:
 ```json
 
 {
-   "MsgType":"MarketDataSnapshot", 			// MsgType / Update Type
+   "MsgType":"MarketDataSnapshot", 			// MsgType or Update Type
    "Timestamp":1545120147260, 				// Milliseconds (epoch)
    "Symbol":"XRP/ETH",
    "NoMDEntries":1, 					//Number of entries in update
