@@ -149,7 +149,7 @@ Cancel working order from the market.
 | Parameters | Type | Mandatory (Y/N) | Description |
 | :--- | :---: | :---: | :--- |
 | apiSecretKey | STRING | Y | Api Secret Key Generated from `HMAC` operation (Currently not implemented. Can be used any string) |
-| clientOrderId | STRING | Y | Unique ID generated from client system per new order request |
+| clientOrderId | STRING | Y | Unique ID generated from client system per new cancel request |
 | exchangeOrderId | STRING | Y | Unique ID assigned by exchange for first time the order was accepted |
 | recvWindow | LONG | N | |
 
