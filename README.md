@@ -15,7 +15,7 @@
 ```
 
 <ul>
-	<li> for `GET` endpoints, parameters must be sent as request body as `x-wwww-form-urlencoded`
+	<li> for <code>GET</code> endpoints, parameters must be sent as request body as `x-wwww-form-urlencoded`</li>
 </ul>
 
 
