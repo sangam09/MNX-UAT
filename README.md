@@ -15,8 +15,15 @@
 ```
 
 <ul>
-	<li> for <code>GET</code> endpoints, parameters must be sent as request body as `x-wwww-form-urlencoded`</li>
+	<li> for <code><i>GET</i></code> endpoints, parameters must be sent in request body with content type as `application/x-wwww-form-urlencoded`</li>
+	<li>Parameters are case-insensitive and can be sent in any order.
 </ul>
 
 
-### Exchange Info:
+## General Endpoints:
+
+
+### Exchange Info
+```
+GET /exchangeInfo
+```
