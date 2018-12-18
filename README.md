@@ -63,7 +63,6 @@ Retrieve JSON object containing the currency pairs, trading status, rateLimits e
     ],
     "symbols": [
         {
-            "instrument_id": 1,
             "symbol": "XRP/ETH",
             "trading_status": "TRADING",
             "base_asset": "ETH",
@@ -77,7 +76,6 @@ Retrieve JSON object containing the currency pairs, trading status, rateLimits e
         },
 	...
         {
-            "instrument_id": 3,
             "symbol": "XRP/BTC",
             "trading_status": "TRADING",
             "base_asset": "BTC",
