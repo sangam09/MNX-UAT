@@ -38,7 +38,7 @@ Retrieve JSON object containing the currency pairs, trading status, rateLimits e
 <b>Parameters:</b> None
 <b>Response:</b>
 
-```json
+```javascript
 {
     "timezone": "GMT", 				<!--- //Timezone -->
     "serverTime": 1545118368886, 		//milliseconds
