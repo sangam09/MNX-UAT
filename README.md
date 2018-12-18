@@ -95,4 +95,10 @@ Retrieve JSON object containing the currency pairs, trading status, rateLimits e
 ```
 
 
-# Websockets
+# WS Market Data Streams
+1. Base API endpoint is: ws://10.48.1.138:81
+
+## Depth & Trade Streams
+> Note: 
+> 1. Currently Depth and Trade streams are combined. Will be separated in future
+> 2. Depth currently is fixed Snapshot refresh. There is no incremental updates. (This feature will be upgraded in api version v2)
