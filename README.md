@@ -89,3 +89,6 @@ Retrieve JSON object containing the currency pairs, trading status, rateLimits e
 }
 
 ```
+
+
+# Websockets
