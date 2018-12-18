@@ -39,8 +39,8 @@ Retrieve JSON object containing the currency pairs, trading status, rateLimits e
 
 ```
 {
-    "timezone": "GMT",
-    "serverTime": 1545118368886,
+    "timezone": "GMT", 				//Timezone
+    "serverTime": 1545118368886, 		//milliseconds
     "rateLimits": [
         {
             "weight_type": "REQUEST_NEW_ORDER",
@@ -110,15 +110,15 @@ Payload:
 ```
 
 {
-   "MsgType":"MarketDataSnapshot",
-   "Timestamp":1545119596094,
-   "Symbol":"XRP/ETH",
-   "NoMDEntries":5,
+   "MsgType":"MarketDataSnapshot", 			// MsgType / Update Type
+   "Timestamp":1545119596094, 				// Milliseconds (epoch)
+   "Symbol":"XRP/ETH", 					// Currency pair
+   "NoMDEntries":5, 					// Total bids + asks
    "Bids":[
         {
-            "MDEntryType":"Bid",
-            "MDEntryPx":"0.00020000",
-            "MDEntrySize":"0.02510000"
+            "MDEntryType":"Bid", 			// Bid / Ask update
+            "MDEntryPx":"0.00020000", 			// Bid price
+            "MDEntrySize":"0.02510000" 			// Bid Volume
    },
    {
             "MDEntryType":"Bid",
@@ -133,9 +133,9 @@ Payload:
    ],
    "Asks":[
    {
-            "MDEntryType":"Ask",
-            "MDEntryPx":"0.00020100",
-            "MDEntrySize":"0.00029800"
+            "MDEntryType":"Ask", 			// Bid / Ask Update
+            "MDEntryPx":"0.00020100", 			// Offer price
+            "MDEntrySize":"0.00029800" 			// Offer volume
    },
    {
             "MDEntryType":"Ask",
@@ -143,6 +143,20 @@ Payload:
             "MDEntrySize":"0.00635400"
    }
    ]
+}
+
+```
+
+```
+
+{
+   "MsgType":"MarketDataSnapshot", 			// MsgType / Update Type
+   "Timestamp":1545120147260, 				// Milliseconds (epoch)
+   "Symbol":"XRP/ETH",
+   "NoMDEntries":1, 					//Number of entries in update
+   "MDEntryType":"Trade", 				//Update Type
+   "MDEntryPx":"0.00020000", 				//Last Traded Price
+   "MDEntrySize":"0.00010000" 				//Last Traded Qty
 }
 
 ```
