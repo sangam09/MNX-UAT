@@ -2,7 +2,7 @@
 
 Jump to following sections (websockets):
 1. [REST Api stream](https://github.com/sangam09/MNX-UAT#rest-api-information): Rest API for orders.
-2. [Market Data stream](https://github.com/sangam09/MNX-UAT#ws-market-data-streams) : Real Time Market Data over websocket.
+2. [Market Data stream](https://github.com/sangam09/MNX-UAT#market-data-streams) : Real Time Market Data over websocket.
 3. User data stream : Real time execution updates (orders & trades) <b>Implementation Pending</b>
 
 ## REST API Information
@@ -165,7 +165,7 @@ Cancel working order from the market.
 <br /><br /><br />
 
 
-# WS Market Data Streams
+# Market Data Streams
 1. Base API endpoint is: ws://10.48.1.138:81
 
 ## Depth & Trade Streams
