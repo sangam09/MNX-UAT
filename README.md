@@ -105,6 +105,7 @@ Send New Order to market.
 
 <b>Weight:</b> 1
 <b>Parameters:</b>
+
 | Parameters | Type | Mandatory (Y/N) | Description |
 | :--- | :---: | :---: | :--- |
 | apiSecretKey | STRING | Y | Api Secret Key Generated from HMAC operation (Currently not implemented. Can be used any string) |
