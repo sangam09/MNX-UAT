@@ -99,5 +99,50 @@ Retrieve JSON object containing the currency pairs, trading status, rateLimits e
 1. Base API endpoint is: ws://10.48.1.138:81
 
 ## Depth & Trade Streams
+Pushes latest Depth and Timeandsales.
+
 > 1. Currently Depth and Trade streams are combined. Will be separated in future
 > 2. Depth currently is fixed Snapshot refresh. There is no incremental updates. (This feature will be upgraded in api version v2)
+
+<b>Stream Name: </b>
+
+Payload:
+```
+
+{
+"MsgType":"MarketDataSnapshot",
+"Timestamp":1545119596094,
+"Symbol":"XRP/ETH",
+"NoMDEntries":5,
+"Bids":[
+{
+"MDEntryType":"Bid",
+"MDEntryPx":"0.00020000",
+"MDEntrySize":"0.02510000"
+},
+{
+"MDEntryType":"Bid",
+"MDEntryPx":"0.00019000",
+"MDEntrySize":"0.04340000"
+},
+{
+"MDEntryType":"Bid",
+"MDEntryPx":"0.00018900",
+"MDEntrySize":"0.00234000"
+}
+],
+"Asks":[
+{
+"MDEntryType":"Ask",
+"MDEntryPx":"0.00020100",
+"MDEntrySize":"0.00029800"
+},
+{
+"MDEntryType":"Ask",
+"MDEntryPx":"0.00020200",
+"MDEntrySize":"0.00635400"
+}
+]
+}
+
+```
