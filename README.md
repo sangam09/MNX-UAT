@@ -96,6 +96,31 @@ Retrieve JSON object containing the currency pairs, trading status, rateLimits e
 ```
 
 
+### New Order
+```
+POST /api/v1/order (TODO: HMAC SHA256 Implementation)
+```
+
+Send New Order to market.
+
+<b>Weight:</b> 1
+<b>Parameters:</b>
+| Parameters | Type | Mandatory (Y/N) | Description |
+| :--- | :---: | :---: | :--- |
+| apiSecretKey | STRING | Y | Api Secret Key Generated from HMAC operation (Currently not implemented. Can be used any string) |
+| price | DECIMAL | N | Mandatory if `orderType` is LIMIT |
+| quantity | DECIMAL | Y | |
+| symbol | STRING | Y | Currency pair to send order |
+| timeInForce | STRING | N | `GTC` (currently supported) / `GTD` (implementation required) |
+| timestamp | LONG | Y | |
+| orderType | STRING | Y | `LIMIT` / `MARKET` |
+| side | STRING | Y | `BUY` / `SELL` |
+| clientOrderId | STRING | Y | Unique ID generated from client system per new order request |
+| recvWindow | LONG | N | |
+
+<b>Response:</b>
+
+
 # WS Market Data Streams
 1. Base API endpoint is: ws://10.48.1.138:81
 
@@ -105,7 +130,8 @@ Pushes latest Depth and Timeandsales.
 > 1. Currently Depth and Trade streams are combined. Will be separated in future
 > 2. Depth currently is fixed Snapshot refresh. There is no incremental updates. (This feature will be upgraded in api version v2)
 
-<b>Stream Name: </b>
+<b>Stream Name:</b> /ws/v1/depth/
+> No filters per symbol pair is available currently on above stream. Filters will be implemented shortly.
 
 Payload:
 
