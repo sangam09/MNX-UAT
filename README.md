@@ -40,7 +40,7 @@ Retrieve JSON object containing the currency pairs, trading status, rateLimits e
 
 ```json
 {
-    "timezone": "GMT", 				<!-- //Timezone -->
+    "timezone": "GMT", 				<!--- //Timezone -->
     "serverTime": 1545118368886, 		//milliseconds
     "rateLimits": [
         {
