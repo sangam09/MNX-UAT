@@ -37,7 +37,7 @@ Retrieve JSON object containing the currency pairs, trading status, rateLimits e
 <b>Parameters:</b> None
 <b>Response:</b>
 
-```
+```json
 {
     "timezone": "GMT", 				//Timezone
     "serverTime": 1545118368886, 		//milliseconds
@@ -107,7 +107,8 @@ Pushes latest Depth and Timeandsales.
 <b>Stream Name: </b>
 
 Payload:
-```
+
+```json
 
 {
    "MsgType":"MarketDataSnapshot", 			// MsgType / Update Type
@@ -147,7 +148,7 @@ Payload:
 
 ```
 
-```
+```json
 
 {
    "MsgType":"MarketDataSnapshot", 			// MsgType / Update Type
