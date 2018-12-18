@@ -137,7 +137,7 @@ Send New Order to market.
 
 ### Cancel Order
 ```
-DELET /api/v1/order (TODO: HMAC SHA256 Implementation)
+DELETE /api/v1/order (TODO: HMAC SHA256 Implementation)
 ```
 
 Cancel working order from the market.
