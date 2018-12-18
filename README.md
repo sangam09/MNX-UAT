@@ -1,8 +1,8 @@
 # MNX-UAT
 
 Jump to following sections (websockets):
-1. [REST Api stream](https://github.com/sangam09/MNX-UAT#general-api-information): Rest API for orders.
-2. [Market Data stream](https://github.com/sangam09/MNX-UAT#websockets) : Real Time Market Data over websocket.
+1. [REST Api stream](https://github.com/sangam09/MNX-UAT#rest-api-information): Rest API for orders.
+2. [Market Data stream](https://github.com/sangam09/MNX-UAT#ws-market-data-streams) : Real Time Market Data over websocket.
 3. User data stream : Real time execution updates (orders & trades) <b>Implementation Pending</b>
 
 ## REST API Information
