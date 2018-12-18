@@ -7,12 +7,12 @@
 	<li>All timestamps are in milliseconds and follow UTC Timezone</li>
 </ol>
 
-<code>
-	{
-		"code": -1121,
-		"msg": "Error message"
-	}
-</code>
+```
+{
+  "code": -1121,
+  "msg": "Error message"
+}
+```
 
 
 ### Exchange Info:
