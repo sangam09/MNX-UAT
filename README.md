@@ -20,7 +20,7 @@ Jump to following sections (websockets):
 ```
 
 <ul>
-	<li>For `GET` `POST` `DELETE` `PUT` endpoints, the parameters must be sent as `query string`. Parameters are case-insensitive and can be sent in any order.
+	<li>For <code>GET</code> <code>POST</code> <code>DELETE</code> <code>PUT</code> endpoints, the parameters must be sent as `query string`. Parameters are case-insensitive and can be sent in any order.
 </ul>
 
 
