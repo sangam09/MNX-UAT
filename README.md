@@ -34,8 +34,11 @@ GET /api/v1/exchangeInfo
 ```
 
 Retrieve JSON object containing the currency pairs, trading status, rateLimits etc.
+
 <b>Weight:</b> 1
+
 <b>Parameters:</b> None
+
 <b>Response:</b>
 
 ```javascript
