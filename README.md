@@ -20,7 +20,7 @@ Jump to following sections (websockets):
 ```
 
 <ul>
-	<li>For <code>GET</code> <code>POST</code> <code>DELETE</code> <code>PUT</code> endpoints, the parameters must be sent as `query string`. Parameters are case-insensitive and can be sent in any order.
+	<li>For <code>GET</code> <code>POST</code> <code>DELETE</code> <code>PUT</code> endpoints, the parameters must be sent as <code>query string</code>. Parameters are case-insensitive and can be sent in any order.
 </ul>
 
 
@@ -149,6 +149,7 @@ Cancel working order from the market.
 | Parameters | Type | Mandatory (Y/N) | Description |
 | :--- | :---: | :---: | :--- |
 | apiSecretKey | STRING | Y | Api Secret Key Generated from `HMAC` operation (Currently not implemented. Can be used any string) |
+| symbol | STRING | Y | Currency pair to send order |
 | clientOrderId | STRING | Y | Unique ID generated from client system per new cancel request |
 | exchangeOrderId | STRING | Y | Unique ID assigned by exchange for first time the order was accepted |
 | recvWindow | LONG | N | |
