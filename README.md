@@ -20,8 +20,7 @@ Jump to following sections (websockets):
 ```
 
 <ul>
-	<li> for <code><i>GET</i></code> endpoints, parameters must be sent in request body with content type as `application/x-wwww-form-urlencoded`</li>
-	<li>Parameters are case-insensitive and can be sent in any order.
+	<li>For `GET` `POST` `DELETE` `PUT` endpoints, the parameters must be sent as `query string`. Parameters are case-insensitive and can be sent in any order.
 </ul>
 
 
@@ -35,9 +34,9 @@ GET /api/v1/exchangeInfo
 
 Retrieve JSON object containing the currency pairs, trading status, rateLimits etc.
 
-| Weight | 1 |
-| :--- | :---: |
-| Parameters | None |
+<b>Weight:</b> 1
+
+<b>Parameters:</b> None
 
 <b>Response:</b>
 
