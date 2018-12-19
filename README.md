@@ -152,7 +152,6 @@ Cancel working order from the market.
 | symbol | STRING | Y | Currency pair to send order |
 | clientOrderId | STRING | Y | Unique ID generated from client system per new cancel request |
 | exchangeOrderId | STRING | Y | Unique ID assigned by exchange for first time the order was accepted |
-| recvWindow | LONG | N | |
 
 <b>Response:</b>
 
