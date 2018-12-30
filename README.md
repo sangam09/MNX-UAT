@@ -109,16 +109,16 @@ Send New Order to market.
 
 | Parameters | Type | Mandatory (Y/N) | Description |
 | :--- | :---: | :---: | :--- |
+| symbol | STRING | Y | Currency pair to send order |
+| side | STRING | Y | `BUY` / `SELL` |
 | price | DECIMAL | N | Mandatory if `orderType` is `LIMIT` |
 | quantity | DECIMAL | Y | |
-| symbol | STRING | Y | Currency pair to send order |
 | timeInForce | STRING | N | `GTC` (currently supported) / `GTD` (implementation required) |
-| timestamp | LONG | Y | |
 | orderType | STRING | Y | `LIMIT` / `MARKET` |
-| side | STRING | Y | `BUY` / `SELL` |
 | clientOrderId | STRING | Y | Unique ID generated from client system per new order request |
 | recvWindow | LONG | N | |
-| signature | STRING | Y | Api Secret Key Generated from `HMAC` operation (Currently not implemented. Can be used any string) |
+| timestamp | LONG | Y | |
+| signature | STRING | Y | Generated from `HMAC` operation using apiSecretKey (Currently not implemented. Can be used any string) |
 
 <b>Response:</b>
 
@@ -151,7 +151,7 @@ Cancel working order from the market.
 | symbol | STRING | Y | Currency pair to send order |
 | clientOrderId | STRING | Y | Unique ID generated from client system per new cancel request |
 | exchangeOrderId | STRING | Y | Unique ID assigned by exchange for first time the order was accepted |
-| signature | STRING | Y | Api Secret Key Generated from `HMAC` operation (Currently not implemented. Can be used any string) |
+| signature | STRING | Y | Generated from `HMAC` operation using apiSecretKey (Currently not implemented. Can be used any string) |
 
 <b>Response:</b>
 
@@ -180,7 +180,7 @@ Query order status.
 | :--- | :---: | :---: | :--- |
 | symbol | STRING | Y | Currency pair to send order |
 | exchangeOrderId | STRING | Y | Unique ID assigned by exchange for first time the order was accepted |
-| signature | STRING | Y | Api Secret Key Generated from `HMAC` operation (Currently not implemented. Can be used any string) |
+| signature | STRING | Y | Generated from `HMAC` operation using apiSecretKey (Currently not implemented. Can be used any string) |
 
 <b>Response:</b>
 
