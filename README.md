@@ -5,6 +5,8 @@
 3. [User data stream](https://github.com/sangam09/MNX-UAT#user-data-stream) : Real time execution updates (orders & trades)
 
 
+<br/><br/><br/>
+
 ## REST API Information
 <ul>
 	<li>Base API endpoint is: https://10.48.1.138</li>
@@ -23,6 +25,8 @@
 	<li>For <code>GET</code> <code>POST</code> <code>DELETE</code> <code>PUT</code> endpoints, the parameters must be sent as <code>query string</code>. Parameters are case-insensitive and can be sent in any order.
 </ul>
 
+
+<br/><br/><br/>
 
 ## Secure Endpoints:
 
@@ -52,6 +56,8 @@ Secure endpoints need the following:
 
 ## General Endpoints:
 
+
+<br/><br/>
 
 ### Exchange Info (NONE)
 ```
