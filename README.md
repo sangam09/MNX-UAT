@@ -258,9 +258,8 @@ Pushes latest Depth and Timeandsales.
 > 2. Depth currently is fixed Snapshot refresh. There is no incremental updates. (This feature will be upgraded in api version v2)
 
 <b>Stream Name:</b> /ws/v1/depth?stream=&lt;pair1&gt;&&lt;pair2&gt;....&&lt;pairN&gt;
-> <code>&lt;pair&gt;</code> values is currency pairs such as XRP/ETH, EOS/BTC, etc.
-
-> <code>&lt;pair&gt;</code> value is case insensitive.
+1. <code>&lt;pair&gt;</code> values is currency pairs such as XRP/ETH, EOS/BTC, etc.
+2. <code>&lt;pair&gt;</code> value is case insensitive.
 
 Payload:
 
