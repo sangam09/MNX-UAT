@@ -259,6 +259,7 @@ Pushes latest Depth and Timeandsales.
 
 <b>Stream Name:</b> /ws/v1/depth?stream=&lt;pair1&gt;&&lt;pair2&gt;....&&lt;pairN&gt;
 > <code>&lt;pair&gt;</code> values is currency pairs such as XRP/ETH, EOS/BTC, etc.
+
 > <code>&lt;pair&gt;</code> value is case insensitive.
 
 Payload:
