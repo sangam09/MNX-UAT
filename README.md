@@ -1,9 +1,9 @@
 # MNX-UAT
 
 <ol>
-	<li>[REST Api stream](https://github.com/sangam09/MNX-UAT#rest-api-information): Rest API for orders.</li>
-	<li>[Market Data stream](https://github.com/sangam09/MNX-UAT#market-data-streams) : Real Time Market Data over websocket.</li>
-	<li>[User data stream](https://github.com/sangam09/MNX-UAT#user-data-stream) : Real time execution updates (orders & trades)</li>
+	<li> [REST Api stream](https://github.com/sangam09/MNX-UAT#rest-api-information): Rest API for orders.</li>
+	<li> [Market Data stream](https://github.com/sangam09/MNX-UAT#market-data-streams) : Real Time Market Data over websocket.</li>
+	<li> [User data stream](https://github.com/sangam09/MNX-UAT#user-data-stream) : Real time execution updates (orders & trades)</li>
 </ol>
 
 
