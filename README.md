@@ -76,27 +76,9 @@ Retrieve JSON object containing the currency pairs, trading status, rateLimits e
 {
     "timezone": "GMT", 				//Timezone
     "serverTime": 1545118368886, 		//milliseconds
-    "rateLimits": [
-        {
-            "weight_type": "REQUEST_NEW_ORDER",
-            "value": 5
-        },
-        {
-            "weight_type": "REQUEST_CXL_ORDER",
-            "value": 3
-        },
-        {
-            "weight_type": "ORDER_STATUS",
-            "value": 1
-        },
-        {
-            "weight_type": "QUERY_OPEN_ORDERS",
-            "value": 3
-        },
-	...
-    ],
     "symbols": [
         {
+            "instrument_id": 1,
             "symbol": "XRP/ETH",
             "trading_status": "TRADING",
             "base_asset": "ETH",
@@ -106,22 +88,21 @@ Retrieve JSON object containing the currency pairs, trading status, rateLimits e
             "max_price": "0.00022100",
             "tick_size": "0.00000001",
             "min_qty": "1.00000000",
-            "max_qty": "90000000.00000000"
+            "max_qty": "9000000.00000000"
         },
-	...
         {
-            "symbol": "XRP/BTC",
+            "instrument_id": 2,
+            "symbol": "EOS/ETH",
             "trading_status": "TRADING",
-            "base_asset": "BTC",
-            "quote_asset": "XRP",
+            "base_asset": "ETH",
+            "quote_asset": "EOS",
             "precision": 8,
-            "min_price": "0.00000943",
-            "max_price": "0.00094290",
-            "tick_size": "0.00000001",
-            "min_qty": "1.00000000",
-            "max_qty": "90000000.00000000"
-        },
-	...
+            "min_price": "0.00285900",
+            "max_price": "0.28584500",
+            "tick_size": "0.00000100",
+            "min_qty": "0.01000000",
+            "max_qty": "9000000.00000000"
+        }
     ]
 }
 
