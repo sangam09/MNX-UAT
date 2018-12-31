@@ -30,16 +30,22 @@ Secure endpoints need the following:
 
 <ol>
 	<li>API keys need to be passed into REST Api via <code>X-MNX-APIID</code> in header.</li>
-	<li>API keys and secretKeys are <strong>case sensitive</strong>.</li>
+	<li>API keys and <code>signature</code> are <strong>case sensitive</strong>.</li>
 </ol>
 
 
 
 | Security Type | Description |
 | :--- | :--- |
-| NONE | EndPoint doesn't requires any API key and secretKey |
-| PARTIAL | EndPoint requires API key and but doesn't require secretKey |
-| SECURE | EndPoint requires both API key and secretKey |
+| NONE | EndPoint doesn't requires any API key and signature |
+| PARTIAL | EndPoint requires API key and but doesn't require signature |
+| SECURE | EndPoint requires both API key and signature |
+
+<ol>
+	<li><strong>SECURE</strong> endpoints also requires <code>signature</code> as additional paramter in query string.</li>
+	<li>Uses <code>HMAC SHA512</code> signature. For this use <code>secretKey</code> as key and <code>totalParam</code> as the value for the HMAC operation.</li>
+	<li><code>totalParam</code> is defined as complete <code>query string</code></li>
+</ol>
 
 
 <br/><br/><br/>
