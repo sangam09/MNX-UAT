@@ -36,7 +36,7 @@ Secure endpoints need the following:
 
 
 | Security Type | Description |
-| :--- | :---: | :---: | :--- |
+| :--- | :--- |
 | NONE | EndPoint doesn't requires any API key and secretKey |
 | PARTIAL | EndPoint requires API key and but doesn't require secretKey |
 | SECURE | EndPoint requires both API key and secretKey |
