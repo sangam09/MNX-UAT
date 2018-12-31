@@ -41,6 +41,9 @@ Secure endpoints need the following:
 | PARTIAL | EndPoint requires API key and but doesn't require secretKey |
 | SECURE | EndPoint requires both API key and secretKey |
 
+
+<br/><br/><br/>
+
 ## General Endpoints:
 
 
