@@ -24,10 +24,24 @@ Jump to following sections (websockets):
 </ul>
 
 
+## Secure Endpoints:
+
+Secure endpoints need the following:
+1. API keys need to be passed into REST Api via <code>X-MNX-APIID</code> in header.
+2. API keys and secretKeys are <strong>case sensitive</strong>.
+
+
+
+| Security Type | Description |
+| :--- | :---: | :---: | :--- |
+| NONE | EndPoint doesn't requires any API key and secretKey |
+| PARTIAL | EndPoint requires API key and but doesn't require secretKey |
+| SECURE | EndPoint requires both API key and secretKey |
+
 ## General Endpoints:
 
 
-### Exchange Info
+### Exchange Info (NONE)
 ```
 GET /api/v1/exchangeInfo
 ```
@@ -96,7 +110,7 @@ Retrieve JSON object containing the currency pairs, trading status, rateLimits e
 ```
 
 
-### New Order
+### New Order (SECURE)
 ```
 POST /api/v1/order (TODO: HMAC SHA256 Implementation)
 ```
@@ -135,7 +149,7 @@ Send New Order to market.
 ```
 
 
-### Cancel Order
+### Cancel Order (SECURE)
 ```
 DELETE /api/v1/order (TODO: HMAC SHA256 Implementation)
 ```
@@ -165,7 +179,7 @@ Cancel working order from the market.
 ```
 
 
-### Order Query
+### Order Query (SECURE)
 ```
 GET /api/v1/order (TODO: HMAC SHA256 Implementation)
 ```
@@ -207,7 +221,7 @@ Query order status.
 
 <br /><br /><br />
 
-# Market Data Streams
+# Market Data Streams (PARTIAL)
 1. Base API endpoint is: ws://10.48.1.138:81
 
 ## Depth & Trade Streams
@@ -279,7 +293,7 @@ Payload:
 
 <br /><br /><br />
 
-# User Data Stream
+# User Data Stream (PARTIAL)
 1. Base API endpoint is: ws://10.48.1.138:81
 
 ## Execution Report Stream
