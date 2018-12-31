@@ -195,7 +195,6 @@ Query order status.
 
 <br /><br /><br />
 
-
 # Market Data Streams
 1. Base API endpoint is: ws://10.48.1.138:81
 
@@ -205,7 +204,9 @@ Pushes latest Depth and Timeandsales.
 > 1. Currently Depth and Trade streams are combined. Will be separated in future
 > 2. Depth currently is fixed Snapshot refresh. There is no incremental updates. (This feature will be upgraded in api version v2)
 
-<b>Stream Name:</b> /ws/v1/depth/
+<b>Stream Name:</b> /ws/v1/depth?stream=<pair>&<pair>....&<pair>
+> <pair> values is currency pairs such as XRP/ETH, EOS/BTC, etc.
+> <pair> value is case insensitive.
 > No filters per symbol pair is available currently on above stream. Filters will be implemented shortly.
 
 Payload:
@@ -260,6 +261,42 @@ Payload:
    "MDEntryType":"Trade", 				//Update Type
    "MDEntryPx":"0.00020000", 				//Last Traded Price
    "MDEntrySize":"0.00010000" 				//Last Traded Qty
+}
+
+```
+
+<br /><br /><br />
+
+# User Data Stream
+1. Base API endpoint is: ws://10.48.1.138:81
+
+## Execution Report Stream
+Pushes realtime order and trade execution reports.
+
+<b>Stream Name:</b> /ws/v1/userData?apiId=52C8BC17765FC0278C53089DBC3AACCF7091F529DBB17DAB7774493D269EB145
+> apiId: Provide your api id as a request query string value to the end point.
+> Supports multiple client connection for single apiId.
+
+Payload:
+
+```javascript
+
+{
+	"MsgType":"ExecutionReport", 				//Update Type
+	"TransactTime":1546234615827, 				//Timestamp in milliseconds
+	"ExecType":"New", 					//Execution Type
+	"OrdStatus":"Placed", 					//Order Status
+	"Symbol":"XRP/ETH", 					//Currency Pair
+	"Side":"BUY", 						//Order side
+	"Price":"0.00022000", 					//Order price
+	"OrderQty":"5.00000000", 				//Order Qty
+	"LeavesQty":"5.00000000", 				//Remaining Open qty in market
+	"CumQty":"0.00000000", 					//Total Filled Qty in market
+	"OrdType":"LIMIT", 					
+	"TimeInForce":"GTC", 					
+	"ClOrdID":"18", 					//Client Order id provided by client system
+	"OrigClOrdID":"18", 					//Base Client Order id provided by client system
+	"OrderID":32 						//Exchange generated unique order id
 }
 
 ```
