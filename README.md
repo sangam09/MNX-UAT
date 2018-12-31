@@ -124,7 +124,7 @@ Retrieve JSON object containing the currency pairs, trading status, rateLimits e
 
 ### New Order (SECURE)
 ```
-POST /api/v1/order (TODO: HMAC SHA256 Implementation)
+POST /api/v1/order (TODO: HMAC SHA512 Implementation)
 ```
 
 Send New Order to market.
@@ -163,7 +163,7 @@ Send New Order to market.
 
 ### Cancel Order (SECURE)
 ```
-DELETE /api/v1/order (TODO: HMAC SHA256 Implementation)
+DELETE /api/v1/order (TODO: HMAC SHA512 Implementation)
 ```
 
 Cancel working order from the market.
@@ -193,7 +193,7 @@ Cancel working order from the market.
 
 ### Order Query (SECURE)
 ```
-GET /api/v1/order (TODO: HMAC SHA256 Implementation)
+GET /api/v1/order (TODO: HMAC SHA512 Implementation)
 ```
 
 Query order status.
