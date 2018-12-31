@@ -190,6 +190,7 @@ Cancel working order from the market.
 }
 ```
 
+<br /><br /><br />
 
 ### Order Query (SECURE)
 ```
