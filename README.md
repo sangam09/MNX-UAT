@@ -27,6 +27,7 @@ Jump to following sections (websockets):
 ## Secure Endpoints:
 
 Secure endpoints need the following:
+
 1. API keys need to be passed into REST Api via <code>X-MNX-APIID</code> in header.
 2. API keys and secretKeys are <strong>case sensitive</strong>.
 
