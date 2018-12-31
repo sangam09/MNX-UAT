@@ -257,7 +257,7 @@ Pushes latest Depth and Timeandsales.
 > 1. Currently Depth and Trade streams are combined. Will be separated in future
 > 2. Depth currently is fixed Snapshot refresh. There is no incremental updates. (This feature will be upgraded in api version v2)
 
-<b>Stream Name:</b> /ws/v1/depth?stream=<currency-pair1>&<currency-pair2>....&<currency-pairN>
+<b>Stream Name:</b> /ws/v1/depth?stream=&lt;pair1&gt;&&lt;currency-pair2&gt;....&&lt;currency-pairN&gt;
 > <pair> values is currency pairs such as XRP/ETH, EOS/BTC, etc.
 > <pair> value is case insensitive.
 > No filters per symbol pair is available currently on above stream. Filters will be implemented shortly.
