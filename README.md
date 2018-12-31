@@ -293,22 +293,23 @@ Payload:
 
 ```javascript
 
+
 {
-	"MsgType":"ExecutionReport", 				//Update Type
-	"TransactTime":1546234615827, 				//Timestamp in milliseconds
-	"ExecType":"New", 					//Execution Type
-	"OrdStatus":"Placed", 					//Order Status
-	"Symbol":"XRP/ETH", 					//Currency Pair
-	"Side":"BUY", 						//Order side
-	"Price":"0.00022000", 					//Order price
-	"OrderQty":"5.00000000", 				//Order Qty
-	"LeavesQty":"5.00000000", 				//Remaining Open qty in market
-	"CumQty":"0.00000000", 					//Total Filled Qty in market
-	"OrdType":"LIMIT", 					
-	"TimeInForce":"GTC", 					
-	"ClOrdID":"18", 					//Client Order id provided by client system
-	"OrigClOrdID":"18", 					//Base Client Order id provided by client system
-	"OrderID":32 						//Exchange generated unique order id
+	"MsgType":"ExecutionReport",
+	"TransactTime":1546243735685, 				//Timestamp in milliseconds
+	"ExecType":"Partial Fill", 				//Execution Type
+	"OrdStatus":"Partially Filled", 			//Order Status
+	"Symbol":"XRP/ETH",
+	"Side":"SELL",
+	"Price":"0.00019000", 					
+	"OrderQty":"0.00250000", 				//Order Qty
+	"LeavesQty":"0.00150000", 				//Remaining Open qty in market
+	"CumQty":"0.00100000", 					//Total executed / filled qty
+	"OrdType":"LIMIT",
+	"TimeInForce":"GTC",
+	"ClOrdID":"1", 						//Client Order id provided by client system
+	"OrigClOrdID":"1", 					//Base Client Order id provided by client system
+	"OrderID":1 						//Exchange generated unique order id
 }
 
 ```
