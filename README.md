@@ -122,6 +122,9 @@ Retrieve JSON object containing the currency pairs, trading status, rateLimits e
 ```
 
 
+<br/><br/><br/>
+
+
 ### New Order (SECURE)
 ```
 POST /api/v1/order (TODO: HMAC SHA512 Implementation)
@@ -161,6 +164,9 @@ Send New Order to market.
 ```
 
 
+<br/><br/><br/>
+
+
 ### Cancel Order (SECURE)
 ```
 DELETE /api/v1/order (TODO: HMAC SHA512 Implementation)
@@ -190,7 +196,8 @@ Cancel working order from the market.
 }
 ```
 
-<br /><br /><br />
+
+<br/><br/><br/>
 
 ### Order Query (SECURE)
 ```
@@ -232,7 +239,8 @@ Query order status.
 
 ```
 
-<br /><br /><br />
+
+<br/><br/><br/>
 
 # Market Data Streams (PARTIAL)
 1. Base API endpoint is: ws://10.48.1.138:81
@@ -304,7 +312,8 @@ Payload:
 
 ```
 
-<br /><br /><br />
+
+<br/><br/><br/>
 
 # User Data Stream (PARTIAL)
 1. Base API endpoint is: ws://10.48.1.138:81
